@@ -27,7 +27,7 @@ int main(){
    exit(0);
  }
  
- while (ch = fgetc(fich)!=EOF){
+ while ((ch = fgetc(fich))!=EOF){
    for(int i=0;i<6;i++){
       if ( ch == operators[i]){
       printf("%c is an operator ",ch);}
