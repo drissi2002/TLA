@@ -1,0 +1,7 @@
+entier = 2;
+afficher (3 * entier)+4;
+booleen = vrai et non faux;
+booleen = booleen et vrai;
+afficher booleen;
+booleen = non booleen;
+afficher booleen;
