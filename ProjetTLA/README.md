@@ -8,3 +8,10 @@ flex -o analys.c analys.l
 bison -d analys.y
 gcc -o analys analys.tab.c
 ```
+## Execution 
+On excute le script : 
+```
+./analys < programme-c.txt
+```
+
+
