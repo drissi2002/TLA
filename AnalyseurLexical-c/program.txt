@@ -1,4 +1,0 @@
-void main(){
-int x =10 ;
-printf("la valeur de x= %d",x);
-}
