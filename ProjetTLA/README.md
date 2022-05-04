@@ -4,7 +4,7 @@ Notre *analyseur syntaxique* recevra les tokens qu'enverra *l'analyseur lexical*
 ## Compilation
 On compile : 
 ```
-flex -o lexique_simple.c lexique_simple.lex
-bison -d syntaxe_simple.y
-gcc -o simple lexique_simple.c syntaxe_simple.tab.c
+flex -o analys.c analys.l
+bison -d analys.y
+gcc -o analys analys.tab.c
 ```
