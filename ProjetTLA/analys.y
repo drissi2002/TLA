@@ -9,8 +9,6 @@ void yyerror(char* s);
 
 %token MAIN 
 %token AFFICHER 
-%token ID 
-%token INF 
 %token PRO 
 %token PRF 
 %token ACO 
@@ -22,6 +20,12 @@ void yyerror(char* s);
 %token ENTIER
 %token VAR
 %token VIRG
+%token INC
+%token DIA
+%token SUP
+%token INF
+%token STD
+%type <integer> ENTIER 
 
 %type<texte> affichage
 %type<texte> affectation
@@ -30,11 +34,13 @@ void yyerror(char* s);
 
 %%
 
-S: MAIN PRO VAR PRF ACO ListeOper ACF{
+S: DEBUT S | PP;
+DEBUT: DIA INC INF STD SUP;
+PP: MAIN PRO VAR PRF ACO ListeOper ACF{
                    printf ("/n c'est le programme principale");
              };
              
-ListeOper :  affectation{
+ListeOper :  affectation ListeOper{
                    printf ("\naffectation");
              }
              |
