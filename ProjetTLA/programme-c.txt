@@ -1,5 +1,0 @@
-#include <stdio.h>
-main(void){
-int x = 10;
-printf("la valeur de x =%d ");
-}
