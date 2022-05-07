@@ -4,14 +4,14 @@ Notre *analyseur syntaxique* recevra les tokens qu'enverra *l'analyseur lexical*
 ## Compilation
 On compile : 
 ```
-flex -o analys.c analys.l
-bison -d analys.y
-gcc -o analys analys.tab.c
+flex -o analyse.c analyse.flex
+bison -d analyse.y
+gcc -o analyse analyse.tab.c
 ```
 ## Execution 
 On excute le script : 
 ```
-./analys < programme-c.txt
+./analyse < prog.txt
 ```
 ## Preview
 ![image](https://user-images.githubusercontent.com/84160502/167260787-da95cde8-09c2-46df-bd3b-31ab8f1cfcb1.png)
