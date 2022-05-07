@@ -14,6 +14,5 @@ On excute le script :
 ./analys < programme-c.txt
 ```
 ## Preview
-![image](https://user-images.githubusercontent.com/84160502/166715439-f5e481ba-7f3c-4d4f-8ab5-124ffe93720e.png)
-
+![image](https://user-images.githubusercontent.com/84160502/167260787-da95cde8-09c2-46df-bd3b-31ab8f1cfcb1.png)
 
